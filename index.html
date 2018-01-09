@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Search Your Movie</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top" class="p-5">
+    
+   
+   <div class="container">
+       <div class="jumbotron" id="formdiv">
+           <h1 class="text-center text-white mb-5 search-title">Search Your Movie</h1>
+           <form action="" id="searchForm">
+               <input type="text" class="form-control" id="searchText" placeholder="Search movies...">
+           </form>
+       </div>
+   </div>
+
+   <div class="container">
+       <div id="movies" class="row row-eq-height">
+           <template id="movie-template">
+                <div class="col-md-4 col-sm-6 col-xs-12 p-2 text-center mb-5 movie-box">
+                    <img src="{{Poster}}" alt="movie poster image" class="img-fluid mb-4">
+                    <h4 class="mb-4">{{Title}}</h4>
+                     <a href="#" class="btn btn btn-info movie-details" data-id="{{imdbID}}">Movie Details</a>
+                </div>
+               
+           </template>
+       </div>
+   </div>
+    
+    
+  <!--  onclick="movieSelected('{{imdbID}}')" -->
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- axios  -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+
+   
+
+    <!-- Custom scripts for this template -->
+    <script src="js/main.min.js"></script>
+
+  </body>
+
+</html>
